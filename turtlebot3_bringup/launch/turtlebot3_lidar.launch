@@ -1,0 +1,8 @@
+<launch>
+
+  <node pkg="hls_lfcd_lds_driver" type="hlds_laser_publisher" name="turtlebot3_lds" output="screen" ns="robot2">    <!--SUSTC-->
+    <param name="port" value="/dev/ttyUSB0"/>
+    <param name="frame_id" value="robot2_base_scan"/>   <!--SUSTC-->
+  </node>
+
+</launch>
