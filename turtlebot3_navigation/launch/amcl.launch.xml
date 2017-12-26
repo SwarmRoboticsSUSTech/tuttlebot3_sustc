@@ -4,7 +4,7 @@
   <arg name="initial_pose_y" default="0.0"/>
   <arg name="initial_pose_a" default="0.0"/>
 
-  <node pkg="amcl" type="amcl" name="amcl" ns = "robot2">   <!--SUSTC-->
+  <node pkg="amcl" type="amcl" name="amcl" ns = "robot2">   <!--SUSTC TODO-->
 
     <param name="min_particles"             value="500"/>
     <param name="max_particles"             value="3000"/>
@@ -37,8 +37,8 @@
     <param name="odom_alpha2"               value="0.1"/>
     <param name="odom_alpha3"               value="0.1"/>
     <param name="odom_alpha4"               value="0.1"/>
-    <param name="odom_frame_id"             value="robot2_odom"/>   <!--SUSTC-->
-    <param name="base_frame_id"             value="robot2_base_footprint"/> <!--SUSTC-->
+    <param name="odom_frame_id"             value="robot2_odom"/>   <!--SUSTC TODO-->
+    <param name="base_frame_id"             value="robot2_base_footprint"/> <!--SUSTC TODO-->
 
   </node>
 </launch>

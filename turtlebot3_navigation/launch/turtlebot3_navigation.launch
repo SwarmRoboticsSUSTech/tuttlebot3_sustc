@@ -6,16 +6,16 @@
 
   <!-- Map server -->
   <arg name="map_file" default="$(find turtlebot3_navigation)/maps/map.yaml"/>
-  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" ns = "robot2">  <!--SUSTC-->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" ns = "robot2">  <!--SUSTC TODO-->
   </node>
 
   <!-- AMCL -->
   <include file="$(find turtlebot3_navigation)/launch/amcl.launch.xml"/>
 
   <!-- move_base -->
-  <arg name="cmd_vel_topic" default="/robot2/cmd_vel" />    <!--SUSTC-->
+  <arg name="cmd_vel_topic" default="/robot2/cmd_vel" />    <!--SUSTC TODO-->
   <arg name="odom_topic" default="odom" />
-  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" ns = "robot2">    <!--SUSTC-->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" ns = "robot2">    <!--SUSTC TODO-->
     <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
 
     <rosparam file="$(find turtlebot3_navigation)/param/costmap_common_params_$(arg model).yaml" command="load" ns="global_costmap" />

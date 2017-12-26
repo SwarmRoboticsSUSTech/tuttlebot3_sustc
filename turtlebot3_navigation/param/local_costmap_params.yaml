@@ -1,6 +1,6 @@
 local_costmap:
-  global_frame: /robot2_odom    #SUSTC
-  robot_base_frame: /robot2_base_footprint  #SUSTC
+  global_frame: /robot2_odom    #SUSTC TODO
+  robot_base_frame: /robot2_base_footprint  #SUSTC TODO
   update_frequency: 2.0
   publish_frequency: 0.5
   static_map: false
