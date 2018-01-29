@@ -1,0 +1,5 @@
+rosrun rviz rviz -d `rospack find turtlebot3_location`/rviz/turtlebot3_locat.rviz
+
+roslaunch turtlebot3_location turtlebot3_location.launch 
+
+roslaunch turtlebot3_location move_to_goal.launch
