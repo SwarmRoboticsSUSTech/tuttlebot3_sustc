@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="turtlebot3_location" type="location_test_node" name="location_test" ns = "robot1" output="screen"  />
+
+</launch>
