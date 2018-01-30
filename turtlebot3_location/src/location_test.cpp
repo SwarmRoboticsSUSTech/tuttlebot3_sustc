@@ -19,14 +19,12 @@ string g_name_space;
 ros::Publisher g_twist_pub;
 bool start = false;
 
-//odom based
+//map based
 void getGoal(const geometry_msgs::PoseStamped& goal_pose)
 {
   ROS_INFO("Received goal.");
   tf::poseStampedMsgToTF(goal_pose, g_goal_map);
   start = true;
-//  string frame = g_goal_map.frame_id_;
-//  ROS_INFO("g_goal_map frame:%s", frame.c_str());
 }
 
 void shutdown(int sig)
